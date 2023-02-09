@@ -1,0 +1,9 @@
+project: python-frontmatter
+target: load-fuzz
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_load.py
+    libfuzzer: true
+    timeout: 15
