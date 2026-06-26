@@ -1,0 +1,5 @@
+project: python-frontmatter
+target: load-fuzz
+cmds:
+  - cmd: /mayhem/fuzz-load
+    libfuzzer: true
